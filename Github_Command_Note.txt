@@ -1,0 +1,4 @@
+Commands      ===>  Workings
+
+git --version ===> to Check the current version of github
+git init      ===> to Initialize git repository
