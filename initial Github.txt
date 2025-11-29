@@ -7,3 +7,9 @@ First of all initialize the github repository.For doing this you have to write t
 
 after initializing the git repo we have to add or stage the repo with this command
 -------->>>>> git add . // git add -A // git add --all  (Here we can use any of them)
+
+Now it's time to commit the repo and we can do that using this command
+----->>>> git commit -m "commit message"
+
+ok then it's time for push the Local repo to the remote repo and the command is
+---->>>> git push
