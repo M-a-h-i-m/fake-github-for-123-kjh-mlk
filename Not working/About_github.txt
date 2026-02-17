@@ -1,0 +1,66 @@
+What is Git?
+Git is a popular version control system.
+
+It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+
+
+
+It is used for:
+
+01. Tracking code changes
+02. Tracking who made changes
+03. Coding collaboration
+
+
+
+
+Key Git Concepts:
+
+
+01. Repository: A folder where Git tracks your project and its history.
+02. Clone: Make a copy of a remote repository on your computer.
+03. Stage: Tell Git which changes you want to save next.
+04. Commit: Save a snapshot of your staged changes.
+05. Branch: Work on different versions or features at the same time.
+06. Merge: Combine changes from different branches.
+07. Pull: Get the latest changes from a remote repository.
+08. Push: Send your changes to a remote repository.
+
+
+
+
+
+Working with Git:
+
+01. Initialize Git on a folder, making it a Repository
+02. Git now creates a hidden folder to keep track of changes in that folder
+03. When a file is changed, added or deleted, it is considered modified
+04. You select the modified files you want to Stage
+05. The Staged files are Committed, which prompts Git to store a permanent snapshot   
+    of the files
+06. Git allows you to see the full history of every commit.
+07. You can revert back to any previous commit.
+08. Git does not store a separate copy of every file in every commit, but keeps track 
+    of changes made in each commit!
+
+
+
+
+Why Git?:
+01. Over 70% of developers use Git!
+02. Developers can work together from anywhere in the world.
+03. Developers can see the full history of the project.
+04. Developers can revert to earlier versions of a project.
+
+
+Note: Most Git actions (like staging, committing, and viewing history) happen on your own computer.
+Only Push and Pull interact with remote servers like GitHub, GitLab, or Bitbucket to upload or download changes.
+
+
+
+What is GitHub?
+01. Git is not the same as GitHub.
+02. GitHub makes tools that use Git.
+03. GitHub is the largest host of source code in the world, and has been owned by  
+    Microsoft since 2018.
+04. In this tutorial, we will focus on using Git with GitHub.

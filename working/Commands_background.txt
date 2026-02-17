@@ -1,0 +1,78 @@
+step - 1 : (Initializing and staging)
+------------------------------------------
+
+01. What Happends When You Run git init?
+
+==> Git creates a hidden folder called '.git' inside your project.
+    This is where Git stores all the information it needs to track your files and history.
+
+02. How to check it?
+==> run 'ls -Force'
+
+
+03. What Happens When You Run `touch <file_name>` command?
+==> It creates a new empty file with the given name.If the file already 
+    exists, it updates the file’s last modified time instead of creating a new one.
+
+
+04. What Happens When You Run `git clone <remote_repository_url>` command?
+==> Git downloads a copy of the remote repository to your computer.
+    It also creates a connection to the remote repo so you can pull and push changes later.
+
+05. What Happens When You Run `ls` command?
+==> It shows the list of files and folders in the current directory.
+    It helps you see what exists in your current location.
+
+
+06. What Happens When You Run `git status` command?
+==> It shows the current state of your repository.You can see which files 
+    are modified, staged, or not tracked.
+
+
+07. What Happens When You Run `clear` command?
+==> It clears the terminal screen.
+
+
+08. What Happens When You Run `pwd` command?
+==> It shows the full path of your current directory.It helps you know 
+    exactly where you are in the file system.
+
+
+09. What Happens When You Run `git reset` command?
+==> It removes files from the staging area.It does not delete the file, it 
+    just unstages it.
+
+
+10. What Happens When You Run `git add -A` command?
+==> It adds all changes (new, modified, and deleted files) to the staging 
+    area.It prepares everything for the next commit.
+
+
+11. What Happens When You Run `git add --all` command?
+==> It does the same thing as `git add -A`.It stages all changes in the 
+    repository.
+
+
+12. What Happens When You Run `git add .` command?
+==> It adds all new and modified files from the current folder to the 
+    staging area.It does not stage deleted files outside the current folder.
+
+
+13. What Happens When You Run `git add <file_name>` command?
+==> It adds only the specified file to the staging area.This lets you 
+    commit specific files instead of everything.
+
+
+14. What Happens When You Run `git add *` command?
+==> It adds all files in the current directory to the staging area.It may .
+    not include hidden files or deleted files
+
+
+15. What Happens When You Run `git add *.txt (git add *<file_extension>)` command?
+==> It adds all files with the specified extension (like .txt) to the 
+    staging area.This lets you stage only specific types of files.
+
+
+
+Others:
+--------------

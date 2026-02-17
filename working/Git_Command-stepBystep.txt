@@ -1,0 +1,25 @@
+step - 1 : (Initializing and staging)
+------------------------------------------
+
+01. touch <file_name>
+02. git init
+03. git clone <remote_repository_url>
+04. git add --all
+05. git add -A
+06. git add .
+07. git add <file_name>
+08. git add *
+09. git add *.txt (git add *<file_extention>)
+
+
+Others:
+--------------
+01. clear
+02. pwd
+03. ls
+04. git reset
+05. git status
+
+06. git log                      
+07. git diff                     
+08. git diff --staged            

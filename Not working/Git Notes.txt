@@ -1,0 +1,112 @@
+
+🔹Stages:
+---------------------|
+U - Untracked        |
+A - Added or Staged  |
+C - Committed        |
+M -Modified          |
+---------------------|
+
+Commands you needs to know----->>>>
+
+git status -s --> To know the current status of unstaged and staged files
+git log --oneline --> To know the current status of saved point
+git log --oneline --graph --> To know the current status of saved point
+***GitHub Commands***:
+
+---
+
+## 🔹 Setup & Configuration
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+git config --list   # check current config
+```
+
+---
+
+## 🔹 Starting a Project
+
+```bash
+git init              # initialize a new git repository
+git clone <repo-url>  # copy a remote repo to local
+```
+
+
+---
+
+## 🔹 Branching
+
+```bash
+git branch                   # list branches
+git branch <name>            # create new branch
+git checkout <name>          # switch to branch
+git checkout -b <name>       # create + switch
+git merge <branch>           # merge branch into current
+git branch -d <name>         # delete branch
+```
+
+---
+
+## 🔹 Working with Remote (GitHub)
+
+```bash
+git remote -v                                # check remote repos
+git remote add origin <repo-url>             # connect to GitHub
+git push -u origin main                      # push first time
+git push                                     # push changes
+git pull                                     # fetch + merge from remote
+git fetch                                    # fetch without merge
+```
+
+---
+
+## 🔹 Undoing Changes
+
+git restore <file>               # undo unstaged changes
+git reset <file>                 # unstage a staged file
+git reset --hard HEAD            # reset all to last commit
+git checkout <commit-id> <file>  # restore file from commit
+```
+
+---
+
+## 🔹 Collaboration
+
+git pull origin main             # get latest changes
+git merge origin/main            # merge remote into local
+git rebase origin/main           # reapply commits on top
+git stash                        # save changes temporarily
+git stash pop                    # apply stashed changes
+```
+
+---
+
+## 🔹 Tags & Releases
+
+```bash
+git tag v1.0.0                   # create tag
+git tag                          # list tags
+git push origin v1.0.0           # push tag to GitHub
+```
+
+---
+
+## 🔹 GitHub CLI (optional but powerful)
+
+If you install GitHub CLI (`gh`):
+
+```bash
+gh repo create                   # create repo on GitHub
+gh issue list                    # list issues
+gh pr create                     # create pull request
+gh pr checkout <id>              # check out PR branch
+```
+
+---
+
+git reset --hard HEAD~1 -- To go back 1 step ahead
+
+---
+
