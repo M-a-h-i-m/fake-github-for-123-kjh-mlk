@@ -1,25 +1,62 @@
-step - 1 : (Initializing and staging)
-------------------------------------------
+step - 1 : (Initializing,staging and commiting)
+------------------------------------------------------
 
 01. touch <file_name>
-02. git init
-03. git clone <remote_repository_url>
+02. git clone <remote_repository_url>
+03. git init
 04. git add --all
 05. git add -A
 06. git add .
 07. git add <file_name>
 08. git add *
 09. git add *.txt (git add *<file_extention>)
+10. git commit -m "<message>"
+
+
+
+step - 2 : (Uses of git remove command)
+---------------------------------------------
+
+01. git rm <file_name>
+02. git rm <file_name> -f
+03. git rm --cached <file_name>
+04. git rm <folder_name>
+05. git rm -r <folder_name>
+
+
+step - 3 : (Branching)
+---------------------------------------------
+
+01. git branch
+02. git branch <branch_name>
+03. git checkout <branch_name>
+04. git checkout main
+05. git merge <branch_name> -m "message"
+
+
+
+step - 4 : (push, fetch and pull)
+---------------------------------------------
+
+01. git push origin main
+02. git push origin <branch_name>
+03. git push
+04. git fetch
+05. git merge
+06. git pull
+
 
 
 Others:
 --------------
+
 01. clear
 02. pwd
 03. ls
 04. git reset
 05. git status
-
 06. git log                      
 07. git diff                     
-08. git diff --staged            
+08. git diff --staged  
+09. git reset HEAD~  
+10. git reset --hard        
