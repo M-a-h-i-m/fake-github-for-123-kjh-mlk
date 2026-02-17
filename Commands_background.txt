@@ -1,7 +1,214 @@
-01. What Happens When You Run git init?
+step - 1 : (Initializing and staging)
+------------------------------------------
 
+
+01. What Happens When You Run `touch <file_name>` command?
+==> It creates a new empty file with the given name.If the file already 
+    exists, it updates the file’s last modified time instead of creating a new one.
+
+
+02. What Happens When You Run `git clone <remote_repository_url>` command?
+==> Git downloads a copy of the remote repository to your computer.
+    It also creates a connection to the remote repo so you can pull and push changes later.
+
+
+03. What Happends When You Run git init?
 ==> Git creates a hidden folder called '.git' inside your project.
-This is where Git stores all the information it needs to track your files and history.
+    This is where Git stores all the information it needs to track your files and history.
 
-02. How to check it?
+
+04. How to check it?
 ==> run 'ls -Force'
+
+
+05. What Happens When You Run `git add --all` command?
+==> It does the same thing as `git add -A`.It stages all changes in the 
+    repository.
+
+
+06. What Happens When You Run `git add -A` command?
+==> It adds all changes (new, modified, and deleted files) to the staging 
+    area.It prepares everything for the next commit.
+
+
+07. What Happens When You Run `git add .` command?
+==> It adds all new and modified files from the current folder to the 
+    staging area.It does not stage deleted files outside the current folder.
+
+
+08. What Happens When You Run `git add <file_name>` command?
+==> It adds only the specified file to the staging area.This lets you 
+    commit specific files instead of everything.
+
+
+09. What Happens When You Run `git add *` command?
+==> It adds all files in the current directory to the staging area.It may .
+    not include hidden files or deleted files
+
+
+10. What Happens When You Run `git add *.txt (git add *<file_extension>)` command?
+==> It adds all files with the specified extension (like .txt) to the 
+    staging area.This lets you stage only specific types of files.
+
+
+11. What Happens When You Run `git commit -m "<message>"` command?
+==> It saves the staged changes as a new commit in the Git history. The 
+    message helps describe what changes were made in that commit.
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+step - 2 : (Uses of git remove command)
+---------------------------------------------
+
+
+01. What Happens When You Run `git rm <file_name>` command?
+==> It removes the file from your folder and also stages the removal. The 
+    file will be deleted permanently after the next commit.
+
+
+02. What Happens When You Run `git rm <file_name> -f` command?
+==> It forcefully removes the file even if it has changes. It deletes the 
+    file and stages the removal immediately.
+
+
+03. What Happens When You Run `git rm --cached <file_name>` command?
+==> It removes the file from Git tracking but keeps it in your folder. The 
+    file will remain on your computer but Git will stop tracking it.
+
+04. What Happens When You Run `git rm <folder_name>` command?
+==> It tries to remove the folder from Git and your system. It will show 
+    an error if the folder contains files and you don’t use the recursive option.
+
+
+05. What Happens When You Run `git rm -r <folder_name>` command?
+==> It removes the folder and all files inside it. The removal is also 
+    staged for the next commit.
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+step - 3 : (Git Branching)
+---------------------------------------------
+
+
+1. What Happens When You Run `git branch` command?
+==> It shows the list of all branches in your repository. The current 
+    branch is highlighted with a star (*).
+
+
+2. What Happens When You Run `git branch <branch_name>` command?
+==> It creates a new branch with the given name. You remain on the current
+    branch until you switch to the new branch.
+
+
+3. What Happens When You Run `git checkout <branch_name>` command?
+==> It switches you to the specified branch. Your working directory 
+    updates to match that branch.
+
+
+4. What Happens When You Run `git checkout main` command?
+==> It switches you to the main branch. Your files update to the latest 
+    state of the main branch.
+
+
+5. What Happens When You Run `git merge <branch_name> -m "message"`
+    command?     
+==> It merges the specified branch into your current branch. The message
+    describes the merge and is saved in the commit history.
+
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+step - 4 : (push, fetch and pull)
+---------------------------------------------
+
+1. What Happens When You Run `git push origin main` command?
+==> It uploads your local main branch commits to the remote repository. 
+    This updates the remote main branch with your latest changes.
+
+
+2. What Happens When You Run `git push origin <branch_name>` command?
+==> It uploads the specified branch to the remote repository. This creates 
+    or updates that branch on the remote.
+
+
+03. What Happens When You Run `git push` command?
+==> It uploads commits from your current branch to its connected remote 
+    branch.It works only if the branch is already linked to a remote branch.
+
+
+04. What Happens When You Run `git fetch` command?
+==> It downloads new commits and updates from the remote repository. It 
+    does not change your working files or current branch.
+
+05. What Happens When You Run `git merge` command?
+==> It combines changes from another branch into your current branch. This 
+    creates a merge commit if there are new changes.
+
+
+06. What Happens When You Run `git pull` command?
+==> It downloads changes from the remote repository and merges them into 
+    your current branch. It is a combination of `git fetch` and `git merge`.
+
+ 
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Others:
+--------------
+
+
+01. What Happens When You Run `clear` command?
+==> It clears the terminal screen.
+
+
+02. What Happens When You Run `pwd` command?
+==> It shows the full path of your current directory.It helps you know 
+    exactly where you are in the file system.
+
+
+03. What Happens When You Run `ls` command?
+==> It shows the list of files and folders in the current directory.
+    It helps you see what exists in your current location.
+
+
+04. What Happens When You Run `git reset` command?
+==> It removes files from the staging area.It does not delete the file, it 
+    just unstages it.
+
+
+05. What Happens When You Run `git status` command?
+==> It shows the current state of your repository.You can see which files 
+    are modified, staged, or not tracked.
+
+
+
+06. What Happens When You Run `git log` command?
+==> It shows the commit history of the repository. You can see commit ID, 
+    author,date, and commit message.
+
+
+07. What Happens When You Run `git diff` command?
+==> It shows the differences between modified files and the last commit. 
+    This helps you see what changes you made before staging.
+
+
+08. What Happens When You Run `git diff --staged` command?
+==> It shows the differences between staged files and the last commit. This
+    helps you review staged changes before committing.
+
+
+09. What Happens When You Run `git reset HEAD~` command?
+==> It removes the last commit but keeps the changes in your folder. The 
+    changes will become unstaged.
+
+
+10. What Happens When You Run `git reset --hard` command?
+==> It removes staged changes and modified files permanently. Your 
+    repository returns to the last committed state.
