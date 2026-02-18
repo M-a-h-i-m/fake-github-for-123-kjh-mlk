@@ -212,3 +212,8 @@ Others:
 10. What Happens When You Run `git reset --hard` command?
 ==> It removes staged changes and modified files permanently. Your 
     repository returns to the last committed state.
+
+
+
+
+
