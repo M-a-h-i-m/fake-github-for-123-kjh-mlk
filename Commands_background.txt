@@ -217,5 +217,4 @@ Others:
 
 
 
-    my name is mahim
-    jilan is my brother
+ git and fit 
