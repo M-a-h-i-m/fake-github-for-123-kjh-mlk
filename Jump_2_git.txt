@@ -1,0 +1,235 @@
+What is Git?
+Git is a popular version control system.
+
+It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+
+
+
+It is used for:
+
+01. Tracking code changes
+02. Tracking who made changes
+03. Coding collaboration
+
+
+
+
+Key Git Concepts:
+
+
+01. Repository: A folder where Git tracks your project and its history.
+02. Clone: Make a copy of a remote repository on your computer.
+03. Stage: Tell Git which changes you want to save next.
+04. Commit: Save a snapshot of your staged changes.
+05. Branch: Work on different versions or features at the same time.
+06. Merge: Combine changes from different branches.
+07. Pull: Get the latest changes from a remote repository.
+08. Push: Send your changes to a remote repository.
+
+
+
+
+
+Working with Git:
+
+01. Initialize Git on a folder, making it a Repository
+02. Git now creates a hidden folder to keep track of changes in that folder
+03. When a file is changed, added or deleted, it is considered modified
+04. You select the modified files you want to Stage
+05. The Staged files are Committed, which prompts Git to store a permanent snapshot   
+    of the files
+06. Git allows you to see the full history of every commit.
+07. You can revert back to any previous commit.
+08. Git does not store a separate copy of every file in every commit, but keeps track 
+    of changes made in each commit!
+
+
+
+
+Why Git?:
+01. Over 70% of developers use Git!
+02. Developers can work together from anywhere in the world.
+03. Developers can see the full history of the project.
+04. Developers can revert to earlier versions of a project.
+
+
+Note: Most Git actions (like staging, committing, and viewing history) happen on your own computer.
+Only Push and Pull interact with remote servers like GitHub, GitLab, or Bitbucket to upload or download changes.
+
+
+
+What is GitHub?
+01. Git is not the same as GitHub.
+02. GitHub makes tools that use Git.
+03. GitHub is the largest host of source code in the world, and has been owned by  
+    Microsoft since 2018.
+04. In this tutorial, we will focus on using Git with GitHub.
+
+
+
+🔹Stages:
+---------------------|
+U - Untracked        |
+A - Added or Staged  |
+C - Committed        |
+M - Modified         |
+---------------------|
+
+Commands you needs to know----->>>>
+
+git status -s --> To know the current status of unstaged and staged files
+git log --oneline --> To know the current status of saved point
+git log --oneline --graph --> To know the current status of saved point
+***GitHub Commands***:
+
+---
+
+## 🔹 Setup & Configuration
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+git config --list   # check current config
+```
+
+
+---
+
+## 🔹 Working with Remote (GitHub)
+
+```bash
+git remote -v                                # check remote repos
+git remote add origin <repo-url>             # connect to GitHub
+git push -u origin main                      # push first time
+git push                                     # push changes
+git pull                                     # fetch + merge from remote
+git fetch                                    # fetch without merge
+```
+
+---
+
+## 🔹 Undoing Changes
+
+git restore <file>               # undo unstaged changes
+git reset <file>                 # unstage a staged file
+git reset --hard HEAD            # reset all to last commit
+git checkout <commit-id> <file>  # restore file from commit
+```
+
+---
+
+## 🔹 Collaboration
+
+git pull origin main             # get latest changes
+git merge origin/main            # merge remote into local
+git rebase origin/main           # reapply commits on top
+git stash                        # save changes temporarily
+git stash pop                    # apply stashed changes
+```
+
+---
+
+## 🔹 Tags & Releases
+
+```bash
+git tag v1.0.0                   # create tag
+git tag                          # list tags
+git push origin v1.0.0           # push tag to GitHub
+```
+
+---
+
+## 🔹 GitHub CLI (optional but powerful)
+
+If you install GitHub CLI (`gh`):
+
+```bash
+gh repo create                   # create repo on GitHub
+gh issue list                    # list issues
+gh pr create                     # create pull request
+gh pr checkout <id>              # check out PR branch
+```
+
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Create a new repository on the command line:
+-------------------------------------------------
+
+echo "# Git_-_Github_Note" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin <URL>
+git push -u origin main
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+push an existing repository from the command line:
+-----------------------------------------------------
+
+git remote add origin <URL>
+git branch -M main
+git push -u origin main
+
+
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+1. What Happens When You Run `echo "# Git_-_Github_Note" >> README.md` command?
+==> It creates a README.md file if it does not exist and adds the text inside it.
+    If the file already exists, it appends the text to the end of the file.
+
+
+2. What Happens When You Run `git init` command?
+==> It creates a new local Git repository in your project folder. A hidden
+   `.git` folder is created to track changes.
+
+
+3. What Happens When You Run `git add README.md` command?
+==> It stages the README.md file. This prepares the file to be included
+    in the next commit.
+
+
+4. What Happens When You Run `git commit -m "first commit"` command?
+==> It saves the staged files as the first commit in the repository history.
+    The message describes the commit.
+
+
+5. What Happens When You Run `git branch -M main` command?
+==> It renames the current branch to main. The `-M` forces the rename
+   even if a branch named main already exists.
+
+
+6. What Happens When You Run `git remote add origin <URL>` command?
+==> It connects your local repository to a remote repository. The name
+   "origin" is used as the default remote reference.
+
+
+7. What Happens When You Run `git push -u origin main` command?
+==> It uploads your main branch to the remote repository. The `-u` sets
+    the upstream connection for future push and pull commands.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8. What Happens When You Run `git remote add origin <URL>` (for existing repo)?
+==> It links your existing local repository to a remote repository. This
+   allows you to push your existing commits online.
+
+
+9. What Happens When You Run `git branch -M main` (for existing repo)?
+==> It renames your current branch to main. This ensures the branch name
+    matches the remote branch.
+
+
+10. What Happens When You Run `git push -u origin main` (for existing repo)?
+==> It uploads your existing commits to the remote repository. It also
+    sets the branch to track origin/main for future pushes.

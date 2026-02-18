@@ -1,4 +1,4 @@
-step - 1 : (Initializing,staging and commiting)
+Step - 1 : (Initializing, staging and committing)
 ------------------------------------------------------
 
 01. touch <file_name>
@@ -17,8 +17,8 @@ step - 1 : (Initializing,staging and commiting)
 step - 2 : (Uses of git remove command)
 ---------------------------------------------
 
-01. git rm <file_name>          #file delete করে
-02. git rm <file_name> -f         #Modified file delete করে কারণ modified file forcefully delete করা লাগে
+01. git rm <file_name>
+02. git rm <file_name> -f
 03. git rm --cached <file_name>
 04. git rm <folder_name>
 05. git rm -r <folder_name>
@@ -32,18 +32,8 @@ step - 3 : (Branching)
 03. git checkout <branch_name>
 04. git checkout main
 05. git merge <branch_name> -m "message"
+06. git branch -d <name>         # delete branch
 
-
-
-step - 4 : (push, fetch and pull)
----------------------------------------------
-
-01. git push origin main
-02. git push origin <branch_name>
-03. git push
-04. git fetch
-05. git merge
-06. git pull
 
 
 
@@ -59,4 +49,10 @@ Others:
 07. git diff                     
 08. git diff --staged  
 09. git reset HEAD~  
-10. git reset --hard        
+10. git reset --hard    
+11. git --version ===> to Check the current version of github   
+
+12. git branch --set-upstream-to=origin/main main
+13. git remote -v
+14. git pull origin main --rebase
+15. git fetch origin 
