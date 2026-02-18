@@ -17,8 +17,8 @@ step - 1 : (Initializing,staging and commiting)
 step - 2 : (Uses of git remove command)
 ---------------------------------------------
 
-01. git rm <file_name> 
-02. git rm <file_name> -f
+01. git rm <file_name>          #file delete করে
+02. git rm <file_name> -f         #Modified file delete করে কারণ modified file forcefully delete করা লাগে
 03. git rm --cached <file_name>
 04. git rm <folder_name>
 05. git rm -r <folder_name>
